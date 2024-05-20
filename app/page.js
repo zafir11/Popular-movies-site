@@ -1,7 +1,7 @@
 import Movie from "./Movie";
 export default async function Home() {
-  const url = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_KEY}`, );
-  const res = await url.json()
+  const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_KEY}`, );
+  const res = await response.json()
   return (
     <main >
       <div className="grid gap-16 grid-cols-fluid">
