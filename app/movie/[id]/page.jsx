@@ -6,7 +6,6 @@ export default async function MovieDetail({ params }) {
   );
 
   const movie = await response.json();
-  console.log(movie);
   const imageBaseURL = "https://image.tmdb.org/t/p/original";
 
   return (
