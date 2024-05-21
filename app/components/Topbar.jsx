@@ -13,10 +13,9 @@ export default function Topbar() {
   return (
     <div className="flex flex-row gap-x-5 pt-0 mb-5">
       <Link className="hover:text-blue-600 hover:rounded" href="/">Home</Link>
-      <Link className="hover:text-blue-600 hover:rounded" href="/">About</Link>
-      <Link className="hover:text-blue-600 hover:rounded" href="/">Blog</Link>
-      <Link className="hover:text-blue-600 hover:rounded" href="/">Popular Movies</Link>
-      <Link className="hover:text-blue-600 hover:rounded" href="/">Recently Added</Link>
+      <Link className="hover:text-blue-600 hover:rounded" href="/movies/popular-movies">Popular Movies</Link>
+      <Link className="hover:text-blue-600 hover:rounded" href="/movies/recent-movies">Recently Added</Link>
+      <Link className="hover:text-blue-600 hover:rounded" href="/movies/upcoming-movies">Upcoming Movies</Link>
       <form className="flex items-center gap-x-3 ml-auto" onSubmit={handleSearch}>
         <input
           type="text"

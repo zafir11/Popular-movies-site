@@ -1,4 +1,4 @@
-import Topbar from './Topbar'
+import Topbar from './components/Topbar'
 import './globals.css'
 
 export default function RootLayout({ children }) {
